@@ -1,0 +1,6 @@
+wget ''
+unzip
+# import moxing as mox
+# mox.file.copy('s3:///urchincache/attachment/a/2/a2f4a8ca-1fbe-4ec2-9225-6b3e88c03b39/coco_val.zip', '/home/ma-user/work/cocoval.zip')
+
+ython /home/ma-user/work/TOOD_MindSpore/train.py --device_id=0 --train_path=/home/ma-user/work/coco_val/images/val2017 --device_num=1 --anno_path=/home/ma-user/work/coco_val/annotations/instances_val2017.json --ckpt_save_path=/home/ma-user/work/TOOD_MindSpore/data/
